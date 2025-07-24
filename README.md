@@ -1,42 +1,54 @@
-# Protezione civile di Settimo Milanese
-[![Maintainability](https://api.codeclimate.com/v1/badges/9cc1aa8a26d4ab076f75/maintainability)](https://codeclimate.com/github/prociv-sm/website/maintainability)
-[![Known Vulnerabilities](https://snyk.io/test/github/prociv-sm/website/badge.svg?targetFile=package.json)](https://snyk.io/test/github/prociv-sm/website?targetFile=package.json)
+# Protezione Civile di Settimo Milanese
 
+## Overview
+This repository contains the source code for the official website of the Protezione Civile di Settimo Milanese: [protezionecivile-settimomilanese.it](https://protezionecivile-settimomilanese.it).
 
-This repo houses the website, available at https://protezionecivile-settimomilanese.it.
+The site is built with [Nuxt.js](https://nuxtjs.org/) (Vue.js framework) and uses [Vuetify.js](https://vuetifyjs.com/) for UI components and styling.
 
-### Prerequisites
+## Features
+- Responsive design for desktop and mobile
+- Volunteer and vehicle information
+- Operations and alerts management
+- Multilingual support (Italian, English)
+- Modern UI with Vuetify
 
-You need to install: 
-- Node.js
-- Yarn
+## Prerequisites
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
-This website use [Vuetify.js](https://vuetifyjs.com/) for template and [Nuxt.js](https://nuxtjs.org/) as framework (Based on [Vue.js](https://vuejs.org/))
+## Getting Started
 
-## Production Build
-
-After a pull request, Travis publish on gitHub pages the compiled static pages.
-
-## Project Setup
-
-### Step 1: Clone project
-
+### 1. Clone the Project
 ```shell
 $ git clone https://github.com/andreacw5/procivsm-site.git
 $ cd procivsm-site
 ```
 
-## Step 2: Run in a local dev environment
-
-Go back to the project root:
-
-```shell
-$ cd <path>/<to>/<project root>
-```
-
-Install dep and run with dev env options:
-
+### 2. Install Dependencies
 ```shell
 $ yarn
-$ yarn run dev
 ```
+
+### 3. Run the Development Server
+```shell
+$ yarn dev
+```
+The site will be available at `http://localhost:3000` by default.
+
+## Production Build & Deployment
+After a pull request, Travis CI publishes the compiled static pages to GitHub Pages.
+
+To build for production locally:
+```shell
+$ yarn build
+$ yarn start
+```
+
+## Contributing
+Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+
+## License
+See [LICENSE.md](LICENSE.md) for details.
+
+## Contact
+For questions or support, contact the project maintainers via [info@protezionecivile-settimomilanese.it](mailto:info@protezionecivile-settimomilanese.it).
