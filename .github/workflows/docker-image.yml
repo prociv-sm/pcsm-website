@@ -23,6 +23,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           registry: registry.gitlab.com
-          repository: ${{ secrets.DOCKER_REPO }}
+          repository: heyatomdev/prociv-settimo/pcsm-website
           tags: ${{ steps.get_version.outputs.VERSION }}
           always_pull: true
